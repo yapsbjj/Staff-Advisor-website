@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chercher un restaurant</title>
+</head>
+<body>
+    <header>
+        <nav id="Menu">
+            <img id="Logo" src="Abstract Chef Cooking Restaurant Free Logo.png"><br>
+            <ul>
+              <h1>Menu</h1>
+                <li> <a href="index.html">Accueil</a></li>
+                <li> <a href="Presentation.html">Qui nous sommes?</a></li>
+                <li> <a href="search.html">Chercher un restaurant</a></li>
+                <li><a href="Inscriptions.html">Bienvenue amis restaurateur!</a></li>
+                <li><a href="contact.html">Nous contacter</a></li>
+            </ul>
+          </nav>
+    </header>
+    <main>
+    <h1>Choisir un établissement</h1>
+    <form>
+        <label for="search restaurant">Choisir un établissement</label>
+        <select name="Nom de l'établissement" id="choixPage">
+            <option value="">Choisir un établissement</option>
+            <option value="FicheMamounia.html">La Mamounia</option>
+            <option value="index.html">Ritz Paris</option>
+            <option value="FicheLaduree.html">Ladurée</option>
+    
+        </select><br>
+        <button onclick="ouvrirPage()" type="submit">Envoyer</a></button>
+    </form>
+    <script>
+function ouvrirPage(){
+    let choix = document.getElementById("choixPage").value;
+    window.open(choix, "_blank");
+}
+    </script>
+    </main>
+    <footer>
+        <a class="linkedin" href="https://fr.linkedin.com/in/yassine-ramdane-12845a160"><img src="./images/icons8-linkedin-48.png" alt="logo-linkedin"/> </a>
+          <a class="twitter" href="https://www.flaticon.com/fr/icones-gratuites/logo-twitter" title="logo twitter icônes"><img src="./images/twitter.png" alt="logo-twitter"/></a>
+      <a class="Github" href="https://github.com/yapsbjj/Mon-C.V"><img src= "" alt="logo-Github"></a>
+          <p class="social-network">
+              Dernière mise à jour le 06 septembre 2023
+          </p>
+    </footer>  
+</body>
+</html>
